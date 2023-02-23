@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="363dp"
+        android:layout_height="74dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/open_sans"
+        android:text="Добавление данных"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+
+        android:id="@+id/name"
+        android:layout_width="325dp"
+
+        android:layout_height="55dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/custom_input"
+        android:ems="10"
+        android:fontFamily="@font/open_sans"
+        android:hint="Имя"
+        android:inputType="textPersonName"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        app:layout_constraintEnd_toEndOf="@+id/title"
+        app:layout_constraintStart_toStartOf="@+id/title"
+        app:layout_constraintTop_toBottomOf="@+id/title" />
+
+    <EditText
+
+        android:id="@+id/surname"
+        android:layout_width="325dp"
+
+        android:layout_height="55dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/custom_input"
+        android:ems="10"
+        android:fontFamily="@font/open_sans"
+        android:hint="Фамилия"
+        android:inputType="textPersonName"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        app:layout_constraintEnd_toEndOf="@+id/name"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/name"
+        app:layout_constraintTop_toBottomOf="@+id/name" />
+
+    <EditText
+
+        android:id="@+id/patronymic"
+        android:layout_width="325dp"
+
+        android:layout_height="55dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/custom_input"
+        android:ems="10"
+        android:fontFamily="@font/open_sans"
+        android:hint="Отчество"
+        android:inputType="textPersonName"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        app:layout_constraintEnd_toEndOf="@+id/surname"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/surname"
+        app:layout_constraintTop_toBottomOf="@+id/surname" />
+
+    <EditText
+
+        android:id="@+id/jobTitle"
+        android:layout_width="325dp"
+
+        android:layout_height="55dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/custom_input"
+        android:ems="10"
+        android:fontFamily="@font/open_sans"
+        android:hint="Должность"
+        android:inputType="textPersonName"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/patronymic" />
+
+    <EditText
+
+        android:id="@+id/course"
+        android:layout_width="325dp"
+
+        android:layout_height="55dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/custom_input"
+        android:ems="10"
+        android:fontFamily="@font/open_sans"
+        android:hint="Курс"
+        android:inputType="textPersonName"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        app:layout_constraintEnd_toEndOf="@+id/special"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/special"
+        app:layout_constraintTop_toBottomOf="@+id/special" />
+
+    <EditText
+
+        android:id="@+id/special"
+        android:layout_width="325dp"
+
+        android:layout_height="55dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/custom_input"
+        android:ems="10"
+        android:fontFamily="@font/open_sans"
+        android:hint="Специальность"
+        android:inputType="textPersonName"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        app:layout_constraintEnd_toEndOf="@+id/facul"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/facul"
+        app:layout_constraintTop_toBottomOf="@+id/facul" />
+
+    <EditText
+
+        android:id="@+id/group_num"
+        android:layout_width="325dp"
+
+        android:layout_height="55dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/custom_input"
+        android:ems="10"
+        android:fontFamily="@font/open_sans"
+        android:hint="Номер группы"
+        android:inputType="textPersonName"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        app:layout_constraintEnd_toEndOf="@+id/course"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/course"
+        app:layout_constraintTop_toBottomOf="@+id/course" />
+
+    <EditText
+
+        android:id="@+id/facul"
+        android:layout_width="325dp"
+
+        android:layout_height="55dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/custom_input"
+        android:ems="10"
+        android:fontFamily="@font/open_sans"
+        android:hint="Факультет"
+        android:inputType="textPersonName"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        app:layout_constraintEnd_toEndOf="@+id/jobTitle"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/jobTitle"
+        app:layout_constraintTop_toBottomOf="@+id/jobTitle" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="144dp"
+        android:layout_height="64dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#FF5722"
+        android:bufferType="editable"
+        android:text="Отправить"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.838"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/group_num"
+        app:layout_constraintVertical_bias="1.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
